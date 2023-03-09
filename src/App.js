@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import User from "./components/UserFolder/User";
+import Button from "./components/UI/Button";
 
 function App() {
+  const backgroundChangeHandler = () => {
+    document.querySelector("body").classList.toggle("black-background");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <User />
+      <Button onClick={backgroundChangeHandler}> Change Background </Button>
     </div>
   );
 }
