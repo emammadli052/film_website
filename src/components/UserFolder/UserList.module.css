@@ -1,0 +1,21 @@
+.user-list {
+  list-style-type: none;
+  align-self: center;
+  font-size: large;
+  border: 2px solid #4343cb;
+  border-radius: 40px;
+  width: 50%;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.user-list li {
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(94, 94, 194);
+}
+
+.user-list li:last-child {
+  /* margin-bottom: 20px; */
+  border: none;
+}
